@@ -1,18 +1,18 @@
 // PROCRAFT STUDIOS - JAVASCRIPT
 
-// Wait for page to load
-window.addEventListener('load', function() {
+document.addEventListener('DOMContentLoaded', function() {
     
     // Navbar scroll effect
     var navbar = document.getElementById('navbar');
-    
-    window.addEventListener('scroll', function() {
-        if (window.scrollY > 50) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
-    });
+    if (navbar) {
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    }
 
     // Mobile menu toggle
     var mobileToggle = document.getElementById('mobileToggle');
@@ -25,11 +25,11 @@ window.addEventListener('load', function() {
         });
     }
 
-    // Smooth scrolling for links
+    // Smooth scrolling for anchor links
     var allLinks = document.querySelectorAll('a[href^="#"]');
     
-    allLinks.forEach(function(link) {
-        link.addEventListener('click', function(e) {
+    for (var i = 0; i < allLinks.length; i++) {
+        allLinks[i].addEventListener('click', function(e) {
             var href = this.getAttribute('href');
             
             if (href !== '#') {
@@ -44,7 +44,7 @@ window.addEventListener('load', function() {
                 }
             }
         });
-    });
+    }
 
     // Contact form handling
     var contactForm = document.getElementById('contactForm');
@@ -58,7 +58,7 @@ window.addEventListener('load', function() {
             var message = contactForm.querySelector('textarea').value;
             
             if (name && email && message) {
-                alert('Thank you! Your message has been sent successfully.');
+                alert('Thank you! Your message has been sent successfully.\n\nWe will get back to you soon!');
                 contactForm.reset();
             } else {
                 alert('Please fill in all fields.');
@@ -66,28 +66,30 @@ window.addEventListener('load', function() {
         });
     }
 
-    // Scroll animations
-    var animateElements = document.querySelectorAll('.service-card, .portfolio-item, .process-step, .pricing-card');
+    // Scroll animations for cards
+    var animateElements = document.querySelectorAll('.service-card, .portfolio-item, .pricing-card');
     
-    animateElements.forEach(function(el) {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(30px)';
-        el.style.transition = 'all 0.6s ease';
-    });
+    if (animateElements.length > 0) {
+        for (var j = 0; j < animateElements.length; j++) {
+            animateElements[j].style.opacity = '0';
+            animateElements[j].style.transform = 'translateY(30px)';
+            animateElements[j].style.transition = 'all 0.6s ease';
+        }
 
-    var observer = new IntersectionObserver(function(entries) {
-        entries.forEach(function(entry) {
-            if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
-            }
-        });
-    }, { threshold: 0.1 });
+        var observer = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1 });
 
-    animateElements.forEach(function(el) {
-        observer.observe(el);
-    });
+        for (var k = 0; k < animateElements.length; k++) {
+            observer.observe(animateElements[k]);
+        }
+    }
 
-    // Console message
+    // Console welcome message
     console.log('ProCraft Studios - Website loaded successfully!');
 });
