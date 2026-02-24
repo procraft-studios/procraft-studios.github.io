@@ -1,5 +1,5 @@
 /* ============================================
-   PROCRAFT STUDIOS - STYLESHEET
+   PROCRAFT STUDIOS - COMPLETE STYLESHEET
    ============================================ */
 
 /* CSS Variables */
@@ -83,16 +83,6 @@ ul {
 @keyframes pulse {
     0%, 100% { transform: scale(1); }
     50% { transform: scale(1.1); }
-}
-
-@keyframes spin {
-    to { transform: rotate(360deg); }
-}
-
-@keyframes gradientMove {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
 }
 
 /* ============================================
@@ -653,4 +643,11 @@ ul {
 
 .process-step:nth-child(even) .step-number {
     right: auto;
-    left: calc(50%
+    left: calc(50% - 1.5rem);
+}
+
+.process-content {
+    background: var(--bg-card);
+    padding: 2rem;
+    border-radius: 20px;
+    border:
