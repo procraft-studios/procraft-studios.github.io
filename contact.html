@@ -298,43 +298,19 @@
             </div>
             
             <!-- Creative Form (CONNECTED TO YOUR EMAIL) -->
-            <form class="creative-form" action="https://formspree.io/f/xbdapgap" method="post">
-                <div class="form-group">
-                    <input type="text" name="name" placeholder="Your Full Name" required>
-                    <i class="fas fa-user"></i>
-                </div>
-                
-                <div class="form-group">
-                    <input type="email" name="email" placeholder="Your Email Address" required>
-                    <i class="fas fa-envelope"></i>
-                </div>
-                
-                <div class="form-group">
-                    <select name="service" required>
-                        <option value="">Select Your Service</option>
-                        <option value="Video Editing">Video Editing</option>
-                        <option value="App Development">App Development</option>
-                        <option value="Web Development">Web Development</option>
-                        <option value="Other">Other</option>
-                    </select>
-                    <i class="fas fa-list"></i>
-                </div>
-                
-                <div class="form-group">
-                    <textarea name="message" placeholder="Tell us about your project..." rows="5" required></textarea>
-                    <i class="fas fa-comment"></i>
-                </div>
-                
-                <button type="submit" class="submit-btn">
-                    <span>Send Message</span>
-                    <i class="fas fa-paper-plane"></i>
-                </button>
-                
-                <div class="form-status" id="formStatus"></div>
-            </form>
-        </div>
-    </section>
+           <form action="https://codefreeform.com/api/contact-api/" method="POST">
 
+  <!-- Replace with your Access Key -->
+  <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+
+  <input type="text"   name="name"    placeholder="Your Name"  required>
+  <input type="email"  name="email"   placeholder="you@example.com" required>
+  <input type="text"  name="subject"   placeholder="Enter Subject" required>
+  <textarea name="message" placeholder="Write your message..." required></textarea>
+
+  <button type="submit">Submit</button>
+</form>
+               
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -397,5 +373,6 @@
     </script>
 </body>
 </html>
+
 
 
