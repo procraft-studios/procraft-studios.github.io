@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ProCraft Studios | Professional Editing, App & Web Development</title>
-    <meta name="description" content="Premium digital services - Professional video editing, mobile app development, and stunning web design.">
+    <title>ProCraft Studios | Professional Digital Services</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -12,22 +11,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Navigation -->
     <nav class="navbar" id="navbar">
-        <a href="#" class="logo">ProCraft</a>
-        <ul class="nav-menu" id="navMenu">
-            <li><a href="#home" class="nav-link">Home</a></li>
-            <li><a href="#services" class="nav-link">Services</a></li>
-            <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-            <li><a href="#process" class="nav-link">Process</a></li>
-            <li><a href="#pricing" class="nav-link">Pricing</a></li>
-            <li><a href="#contact" class="nav-link">Contact</a></li>
-            <li><a href="#contact" class="btn btn-primary nav-cta">Get Started</a></li>
+        <a href="index.html" class="logo">ProCraft</a>
+        <ul class="nav-menu">
+            <li><a href="index.html" class="nav-link active">Home</a></li>
+            <li><a href="services.html" class="nav-link">Services</a></li>
+            <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+            <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+            <li><a href="contact.html" class="btn btn-primary nav-cta">Get Started</a></li>
         </ul>
         <div class="mobile-toggle" id="mobileToggle">
             <span></span><span></span><span></span>
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-bg">
             <div class="hero-glow hero-glow-1"></div>
@@ -39,267 +38,70 @@
                 <span>Available for New Projects</span>
             </div>
             <h1>Transform Your Ideas Into <span class="gradient-text">Digital Excellence</span></h1>
-            <p>Premium video editing, stunning mobile apps, and breathtaking websites. We craft digital experiences that captivate your audience and grow your business.</p>
+            <p>Premium video editing, stunning mobile apps, and breathtaking websites. We craft digital experiences that captivate your audience.</p>
             <div class="hero-buttons">
-                <a href="#contact" class="btn btn-primary"><i class="fas fa-rocket"></i> Start Your Project</a>
-                <a href="#portfolio" class="btn btn-outline"><i class="fas fa-eye"></i> View Our Work</a>
+                <a href="contact.html" class="btn btn-primary"><i class="fas fa-rocket"></i> Start Your Project</a>
+                <a href="portfolio.html" class="btn btn-outline"><i class="fas fa-eye"></i> View Our Work</a>
             </div>
             <div class="hero-stats">
-                <div class="stat"><div class="stat-number">500+</div><div class="stat-label">Projects Completed</div></div>
-                <div class="stat"><div class="stat-number">150+</div><div class="stat-label">Happy Clients</div></div>
-                <div class="stat"><div class="stat-number">5+</div><div class="stat-label">Years Experience</div></div>
+                <div class="stat"><div class="stat-number">500+</div><div class="stat-label">Projects</div></div>
+                <div class="stat"><div class="stat-number">150+</div><div class="stat-label">Clients</div></div>
+                <div class="stat"><div class="stat-number">5+</div><div class="stat-label">Years</div></div>
                 <div class="stat"><div class="stat-number">24/7</div><div class="stat-label">Support</div></div>
             </div>
         </div>
     </section>
 
-    <section class="services" id="services">
+    <!-- Services Preview -->
+    <section class="services-preview">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Our Services</span>
                 <h2 class="section-title">What We Do Best</h2>
-                <p class="section-desc">We deliver exceptional digital solutions tailored to your unique needs.</p>
             </div>
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-icon"><i class="fas fa-film"></i></div>
-                    <h3>Professional Video Editing</h3>
-                    <p>Transform your raw footage into cinematic masterpieces with expert editing.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> YouTube & Social Media Videos</li>
-                        <li><i class="fas fa-check"></i> Commercial & Advertising</li>
-                        <li><i class="fas fa-check"></i> Color Grading & VFX</li>
-                        <li><i class="fas fa-check"></i> Motion Graphics</li>
-                    </ul>
+                    <h3>Video Editing</h3>
+                    <p>Cinematic edits for YouTube, commercials, and brand videos.</p>
+                    <a href="services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="service-card">
                     <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
-                    <h3>Mobile App Development</h3>
-                    <p>Native and cross-platform apps that deliver exceptional user experiences.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> iOS App Development</li>
-                        <li><i class="fas fa-check"></i> Android App Development</li>
-                        <li><i class="fas fa-check"></i> Cross-Platform Apps</li>
-                        <li><i class="fas fa-check"></i> App Store Submission</li>
-                    </ul>
+                    <h3>App Development</h3>
+                    <p>Native and cross-platform mobile apps for iOS and Android.</p>
+                    <a href="services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="service-card">
                     <div class="service-icon"><i class="fas fa-code"></i></div>
-                    <h3>Website Development</h3>
-                    <p>Stunning, fast, and SEO-optimized websites that convert visitors.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Custom Website Design</li>
-                        <li><i class="fas fa-check"></i> E-Commerce Solutions</li>
-                        <li><i class="fas fa-check"></i> WordPress Development</li>
-                        <li><i class="fas fa-check"></i> SEO Optimization</li>
-                    </ul>
+                    <h3>Web Development</h3>
+                    <p>Stunning, fast websites with modern design and SEO optimization.</p>
+                    <a href="services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="portfolio" id="portfolio">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Our Portfolio</span>
-                <h2 class="section-title">Recent Projects</h2>
-                <p class="section-desc">A showcase of our finest work across all services.</p>
-            </div>
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <div class="portfolio-image"><i class="fas fa-video portfolio-icon"></i></div>
-                    <div class="portfolio-content">
-                        <div class="portfolio-category">Video Editing</div>
-                        <h3>Tech Product Launch</h3>
-                        <p>High-energy product video with motion graphics and VFX.</p>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-image"><i class="fas fa-shopping-cart portfolio-icon"></i></div>
-                    <div class="portfolio-content">
-                        <div class="portfolio-category">Web Development</div>
-                        <h3>E-Commerce Platform</h3>
-                        <p>Full-featured online store with seamless checkout.</p>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-image"><i class="fas fa-running portfolio-icon"></i></div>
-                    <div class="portfolio-content">
-                        <div class="portfolio-category">App Development</div>
-                        <h3>Fitness Tracking App</h3>
-                        <p>Feature-rich fitness app with workout tracking.</p>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-image"><i class="fas fa-chart-line portfolio-icon"></i></div>
-                    <div class="portfolio-content">
-                        <div class="portfolio-category">Web Development</div>
-                        <h3>Business Dashboard</h3>
-                        <p>Analytics dashboard with real-time data visualization.</p>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-image"><i class="fas fa-bullhorn portfolio-icon"></i></div>
-                    <div class="portfolio-content">
-                        <div class="portfolio-category">Video Editing</div>
-                        <h3>Brand Documentary</h3>
-                        <p>Emotional brand story video for marketing.</p>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-image"><i class="fas fa-utensils portfolio-icon"></i></div>
-                    <div class="portfolio-content">
-                        <div class="portfolio-category">App Development</div>
-                        <h3>Food Delivery App</h3>
-                        <p>Full-featured food delivery platform.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="process" id="process">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Our Process</span>
-                <h2 class="section-title">How We Work</h2>
-                <p class="section-desc">A proven methodology that ensures exceptional results.</p>
-            </div>
-            <div class="process-timeline">
-                <div class="process-step">
-                    <div class="step-number">01</div>
-                    <div class="process-content"><h3>Discovery & Planning</h3><p>We research your business and create a detailed project roadmap.</p></div>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">02</div>
-                    <div class="process-content"><h3>Design & Prototyping</h3><p>Our team creates stunning visual designs and prototypes.</p></div>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">03</div>
-                    <div class="process-content"><h3>Development</h3><p>We build scalable, secure, and high-performance solutions.</p></div>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">04</div>
-                    <div class="process-content"><h3>Testing & Launch</h3><p>Rigorous QA ensures everything works perfectly before launch.</p></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="pricing" id="pricing">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Pricing</span>
-                <h2 class="section-title">Transparent Pricing</h2>
-                <p class="section-desc">Flexible plans that fit your budget.</p>
-            </div>
-            <div class="pricing-grid">
-                <div class="pricing-card">
-                    <div class="pricing-header"><h3>Starter</h3><p>Perfect for small projects</p></div>
-                    <div class="pricing-price"><span class="currency">$</span><span class="amount">299</span><span class="period">starting</span></div>
-                    <ul class="pricing-features">
-                        <li><i class="fas fa-check"></i> Single Page Website</li>
-                        <li><i class="fas fa-check"></i> Basic Video Editing</li>
-                        <li><i class="fas fa-check"></i> Mobile Responsive</li>
-                        <li><i class="fas fa-check"></i> 5 Days Delivery</li>
-                    </ul>
-                    <a href="#contact" class="btn btn-outline pricing-btn">Get Started</a>
-                </div>
-                <div class="pricing-card popular">
-                    <div class="popular-badge">Most Popular</div>
-                    <div class="pricing-header"><h3>Professional</h3><p>Best for growing businesses</p></div>
-                    <div class="pricing-price"><span class="currency">$</span><span class="amount">799</span><span class="period">starting</span></div>
-                    <ul class="pricing-features">
-                        <li><i class="fas fa-check"></i> Multi-Page Website</li>
-                        <li><i class="fas fa-check"></i> Advanced Video Editing</li>
-                        <li><i class="fas fa-check"></i> CMS Integration</li>
-                        <li><i class="fas fa-check"></i> SEO Optimization</li>
-                        <li><i class="fas fa-check"></i> Priority Support</li>
-                    </ul>
-                    <a href="#contact" class="btn btn-primary pricing-btn">Get Started</a>
-                </div>
-                <div class="pricing-card">
-                    <div class="pricing-header"><h3>Enterprise</h3><p>For large scale projects</p></div>
-                    <div class="pricing-price"><span class="currency">$</span><span class="amount">1999</span><span class="period">starting</span></div>
-                    <ul class="pricing-features">
-                        <li><i class="fas fa-check"></i> Custom Web Application</li>
-                        <li><i class="fas fa-check"></i> Full Video Production</li>
-                        <li><i class="fas fa-check"></i> Mobile App Development</li>
-                        <li><i class="fas fa-check"></i> 24/7 Dedicated Support</li>
-                    </ul>
-                    <a href="#contact" class="btn btn-outline pricing-btn">Contact Us</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Contact Us</span>
-                <h2 class="section-title">Let's Start Your Project</h2>
-                <p class="section-desc">Ready to transform your vision into reality? Get in touch today.</p>
-            </div>
-            <div class="contact-wrapper">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div><h4>Email</h4><p>hello@procraftstudios.com</p></div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div><h4>Phone</h4><p>+1 (555) 123-4567</p></div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div><h4>Location</h4><p>New York, NY 10001</p></div>
-                    </div>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <form class="contact-form" id="contactForm">
-                    <div class="form-group"><input type="text" placeholder="Your Name" required></div>
-                    <div class="form-group"><input type="email" placeholder="Your Email" required></div>
-                    <div class="form-group">
-                        <select required>
-                            <option value="">Select Service</option>
-                            <option value="video">Video Editing</option>
-                            <option value="app">App Development</option>
-                            <option value="web">Web Development</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
-                    <div class="form-group"><textarea placeholder="Tell us about your project" rows="5" required></textarea></div>
-                    <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Send Message</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <a href="#" class="logo">ProCraft</a>
+                    <a href="index.html" class="logo">ProCraft</a>
                     <p>Premium digital services for modern businesses.</p>
                 </div>
                 <div class="footer-links">
                     <h4>Quick Links</h4>
-                    <a href="#services">Services</a>
-                    <a href="#portfolio">Portfolio</a>
-                    <a href="#pricing">Pricing</a>
-                    <a href="#contact">Contact</a>
+                    <a href="index.html">Home</a>
+                    <a href="services.html">Services</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="contact.html">Contact</a>
                 </div>
                 <div class="footer-links">
                     <h4>Services</h4>
-                    <a href="#">Video Editing</a>
-                    <a href="#">App Development</a>
-                    <a href="#">Web Development</a>
-                    <a href="#">SEO</a>
+                    <a href="services.html">Video Editing</a>
+                    <a href="services.html">App Development</a>
+                    <a href="services.html">Web Development</a>
                 </div>
             </div>
             <div class="footer-bottom">
