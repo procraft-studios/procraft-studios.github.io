@@ -796,4 +796,12 @@ ul { list-style: none; }
         padding: 15px 20px;
     }
 }
+/* EMERGENCY FIX */
+#mobileToggle {
+    display: flex !important;
+    background: yellow !important;
+}
 
+#mobileToggle span {
+    background: red !important;
+}
