@@ -763,11 +763,8 @@ ul { list-style: none; }
     font-size: 0.85rem;
 }
 
-/* ============================================
-   MOBILE RESPONSIVE STYLES
-   ============================================ */
+/* ===== MOBILE STYLES ===== */
 @media (max-width: 768px) {
-    /* Navigation */
     .mobile-toggle {
         display: flex;
     }
@@ -777,16 +774,12 @@ ul { list-style: none; }
         top: 0;
         right: -100%;
         width: 80%;
-        max-width: 300px;
         height: 100vh;
-        background: var(--bg-card);
+        background: #1e1e2e;
         flex-direction: column;
-        justify-content: flex-start;
         padding-top: 70px;
-        gap: 0;
-        transition: var(--transition);
-        box-shadow: -10px 0 40px rgba(0, 0, 0, 0.5);
-        border-left: 1px solid var(--border);
+        transition: right 0.3s ease;
+        z-index: 999;
     }
     
     .nav-menu.active {
@@ -794,70 +787,11 @@ ul { list-style: none; }
     }
     
     .nav-menu li {
-        width: 100%;
-        border-bottom: 1px solid var(--border);
+        border-bottom: 1px solid rgba(255,255,255,0.1);
     }
     
     .nav-link {
         display: block;
-        padding: 1rem 1.5rem;
-        font-size: 1rem;
+        padding: 15px 20px;
     }
-    
-    .nav-link:hover {
-        background: rgba(99, 102, 241, 0.1);
-    }
-    
-    .nav-cta {
-        margin: 1rem 1.5rem;
-        justify-content: center;
-    }
-    
-    /* Hero */
-    .hero {
-        padding: 7rem 4% 3rem;
-        min-height: auto;
-    }
-    
-    .hero h1 {
-        font-size: 1.75rem;
-        line-height: 1.3;
-    }
-    
-    .hero p {
-        font-size: 0.95rem;
-    }
-    
-    .hero-stats {
-        gap: 1.5rem;
-    }
-    
-    .stat-number {
-        font-size: 1.5rem;
-    }
-    
-    /* Services */
-    .services-preview {
-        padding: 3rem 4%;
-    }
-    
-    .services-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    /* Contact */
-    .contact-full {
-        padding: 3rem 4%;
-    }
-    
-    .contact-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    /* Footer */
-    .footer {
-        padding: 3rem 4% 1.5rem;
-    }
-    
-    .footer-content {
-        grid-template-columns: 1fr;
+}
