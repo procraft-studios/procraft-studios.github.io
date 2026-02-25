@@ -150,12 +150,13 @@ ul { list-style: none; }
 }
 
 .mobile-toggle {
-    display: none;
+    display: none;  /* Hidden by default on desktop */
     flex-direction: column;
-    gap: 3px;
+    gap: 5px;
     cursor: pointer;
     padding: 8px;
     z-index: 1001;
+}
 }
 
 .mobile-toggle span {
@@ -795,3 +796,4 @@ ul { list-style: none; }
         padding: 15px 20px;
     }
 }
+
